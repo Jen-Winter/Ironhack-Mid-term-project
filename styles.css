@@ -2,6 +2,9 @@ body {
   font-family: 'Inter', 'Times New Roman';
   color: #6b708d;
   background-color: #f2f4fc;
+  padding: 0 5vw;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 /* Font sizes and weights */
@@ -139,8 +142,6 @@ a {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  padding-left: 10rem;
-  padding-right: 10rem;
   padding-top: 1rem;
   align-content: center;
   align-items: center;
@@ -167,10 +168,8 @@ a {
 
 .hero {
   display: flex;
-  padding-left: 10rem;
-  padding-right: 10rem;
   padding-top: 1rem;
-  height: 600px;
+  height: auto;
 }
 
 .hero-left {
@@ -180,13 +179,14 @@ a {
   padding-top: 80px;
   padding-right: 50px;
   gap: 70px;
-  container {
-    display: flex;
-    height: 52px;
-    align-items: center;
-    gap: 70px;
-    flex-wrap: nowrap;
-  }
+}
+
+.hero-buttons {
+  display: flex;
+  height: 52px;
+  align-items: center;
+  gap: 70px;
+  flex-wrap: nowrap;
 }
 
 .hero-right {
@@ -224,8 +224,6 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 8rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
 
 .client-logo {
@@ -243,22 +241,18 @@ a {
 /* Projects Section */
 
 .section-title {
-  padding-left: 10rem;
-  padding-right: 10rem;
   margin-top: 8rem;
 }
 
 .projects {
   display: flex;
   justify-content: space-between;
-  padding-left: 10rem;
-  padding-right: 10rem;
   padding-top: 2rem;
 }
 
 .project-card {
   background-color: white;
-  width: 330px;
+  width: 320px;
   border-radius: 5px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
@@ -270,7 +264,7 @@ a {
 }
 
 .project-image {
-  width: 330px;
+  width: 100%;
   height: 220px;
   object-fit: cover;
   margin: 0;
@@ -297,11 +291,12 @@ a {
   justify-content: space-evenly;
   align-items: center;
   background-color: #292e47;
-  height: 500px;
-  margin: 10rem 10rem 0rem 10rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  min-height: 400px;
+  margin-top: 200px;
+  max-width: 1300px;
+  width: auto;
   text-align: center;
+  padding: 2rem;
 }
 
 .coloryellow {
@@ -344,15 +339,14 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 250px;
-  row-gap: 80px;
-  height: 500px;
   width: 100%;
+  column-gap: 400px;
+  row-gap: 150px;
+  height: auto;
   align-items: center;
   justify-content: space-evenly;
   align-content: space-evenly;
   justify-items: center;
-  margin-top: -500px;
   position: absolute;
   img {
     width: 150px;
@@ -382,9 +376,10 @@ a {
 }
 /* Newsletter container  */
 .questions-container {
-  margin: 10rem 5rem 10rem 5rem;
+  margin: 10rem 0rem 10rem 0rem;
   display: flex;
-  height: 400px;
+  height: auto;
+  min-height: 350px;
   background-color: #ffc600;
   flex-direction: column;
   align-items: center;
@@ -404,7 +399,7 @@ a {
 
 .emailinput {
   height: 50px;
-  width: 350px;
+  width: auto;
   border-radius: 8px;
   border: none;
   padding-left: 50px;
@@ -427,7 +422,6 @@ footer {
   display: flex;
   justify-content: space-between;
   height: 150px;
-  margin: 10rem 10rem 10rem 10rem;
   line-height: 1.5;
 }
 
@@ -454,4 +448,239 @@ footer {
 .footer-right a:hover {
   color: #072ac8;
   transition: 0.3s;
+}
+
+/* Media Query Style for Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Media Query Style for Smartphone */
+
+@media (max-width: 767px) {
+  /*body*/
+  body {
+    padding: 0 3vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  /*typo*/
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .body-medium {
+    font-size: 16px;
+  }
+  .body-regular {
+    font-size: 16px;
+  }
+  .headline-text-regular {
+    font-size: 14px;
+  }
+  .headline-text-regular-dark {
+    font-size: 14px;
+  }
+  .headline-link-regular {
+    font-size: 14px;
+  }
+  .headline-link-regular:hover {
+    font-size: 14px;
+  }
+  .headline-text-medium {
+    font-size: 14px;
+  }
+  .headline-text-medium:hover {
+    font-size: 14px;
+  }
+  .caption-1 {
+    font-size: 12px;
+  }
+  .caption-2 {
+    font-size: 12px;
+  }
+
+  /*header*/
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    img {
+      position: absolute;
+    }
+    button {
+      margin-top: 1rem;
+      height: 50px;
+    }
+  }
+
+  .navigation {
+    margin-top: 4rem;
+    a {
+      padding: 1rem;
+      margin: 0;
+    }
+  }
+  /*hero*/
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 6rem;
+    padding: 0;
+    height: auto;
+    .button-1 {
+      height: 50px;
+    }
+  }
+
+  img.hero-img {
+    width: 100%;
+    height: auto;
+    scale: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-card {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .hero-left {
+    margin-top: 0;
+    padding: 1rem;
+    text-align: center;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /*clients*/
+  .clients {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  /*projects*/
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-card-text {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .section-title {
+    margin-top: 5rem;
+  }
+
+  .project-card {
+    width: 90%;
+    min-width: 300px;
+    max-width: 350px;
+  }
+  /*testimonials*/
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 1rem;
+    height: auto;
+    min-height: 350px;
+  }
+
+  .testimonials-background {
+    height: auto;
+  }
+
+  .container-emoji {
+    display: block;
+    visibility: hidden;
+    width: 10;
+  }
+  /*newsletter*/
+  .questions-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .subscription-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .emailinput {
+    margin: 0;
+  }
+
+  /*footer*/
+  footer {
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .footer-right {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
