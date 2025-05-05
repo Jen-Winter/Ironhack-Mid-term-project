@@ -3,7 +3,7 @@ This was my first web development project completed during the Ironhack Frontend
 
 [View deployed demo](https://ironhack-project1-jen-winter.netlify.app/index.html)
 
-[View presentation](https://www.canva.com/design/DAGmjD0uSLA/gIxhoDIflbcY2vV2lWPqFQ/edit?utm_content=DAGmjD0uSLA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[View presentation](https://www.canva.com/design/DAGmjD0uSLA/bcSTpTJaVsEMeiHT1RsSig/view?utm_content=DAGmjD0uSLA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf365be0120)
 
 [View API endpoint](https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects)
 
