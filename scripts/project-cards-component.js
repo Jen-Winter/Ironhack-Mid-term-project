@@ -21,7 +21,7 @@ function createProjectCard(project) {
 
   const a = document.createElement('a');
   a.className = 'headline-link-regular';
-  a.href = `/pages/project.html?id=${project.uuid}`;
+  a.href = `project.html?id=${project.uuid}`;
   a.textContent = 'Learn more';
 
   textDiv.appendChild(h5);
