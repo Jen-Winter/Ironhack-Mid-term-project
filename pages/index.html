@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,29 +22,10 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <img
-          src="project-assets/logos/circle.svg"
-          alt="Circle logo"
-          class="logo"
-        />
-        <div class="navigation">
-          <a class="headline-text-medium" href="https://www.example.com"
-            >Home</a
-          >
-          <a class="headline-text-medium" href="https://www.example.com"
-            >Projects</a
-          >
-          <a class="headline-text-medium" href="https://www.example.com"
-            >Services</a
-          >
-        </div>
-        <button class="button-1">
-          <a class="button-text" href="https://www.example.com">Contact Us</a>
-        </button>
-      </div>
-    </header>
+    <div id="header"></div>
+    <div id="mobile-header"></div>
+    <div id="overlay-menu"></div>
+      
 
     <section class="hero">
       <div class="hero-left">
@@ -46,29 +36,29 @@
         </p>
         <div class="hero-buttons">
           <button class="button-1">
-            <a class="button-text" href="https://www.example.com"
+            <a class="button-text" href="contact-page.html"
               >Get in touch</a
             >
           </button>
-          <a class="headline-text-medium" href="https://www.example.com"
+          <a class="headline-text-medium" href="projects/1.html"
             >See our work</a
           >
         </div>
       </div>
       <div class="hero-right">
         <img
-          src="project-assets/hero-section/hero-image.png"
+          src="/project-assets/hero-section/hero-image.png"
           alt="Pretty photo of one of our hero employees"
           class="hero-img"
         />
         <img
-          src="project-assets/hero-section/card-2.png"
+          src="/project-assets/hero-section/card-2.png"
           alt="thumbs up icon"
           class="hero-card"
           id="card-2"
         />
         <img
-          src="project-assets/hero-section/card-1.png"
+          src="/project-assets/hero-section/card-1.png"
           alt="credit card icon"
           class="hero-card"
           id="card-1"
@@ -77,73 +67,35 @@
     </section>
     <section class="clients">
       <img
-        src="project-assets/logos/airbnb-logo.svg"
+        src="/project-assets/logos/airbnb-logo.svg"
         alt="airbnb logo"
         class="client-logo"
       />
       <img
-        src="project-assets/logos/google-logo.svg"
+        src="/project-assets/logos/google-logo.svg"
         alt="google logo"
         class="client-logo"
       />
       <img
-        src="project-assets/logos/microsoft-logo.svg"
+        src="/project-assets/logos/microsoft-logo.svg"
         alt="microsoft logo"
         class="client-logo"
       />
       <img
-        src="project-assets/logos/fedex-logo.svg"
+        src="/project-assets/logos/fedex-logo.svg"
         alt="fedex logo"
         class="client-logo"
       />
       <img
-        src="project-assets/logos/amazon-logo.svg"
+        src="/project-assets/logos/amazon-logo.svg"
         alt="amazon logo"
         class="client-logo"
       />
     </section>
-    <h3 class="section-title">Recent Projects</h3>
-    <br />
-    <section class="projects">
-      <div class="project-card">
-        <img
-          class="project-image"
-          src="project-assets/projects-section/1.jpg"
-          alt="project image 1"
-        />
-        <div class="project-card-text">
-          <h5 class="body-medium">Simplify</h5>
-          <p class="headline-text-regular">UI Design & App Development</p>
-          <br />
-          <a class="headline-link-regular" href="www.example.com">Learn more</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img
-          class="project-image"
-          src="project-assets/projects-section/2.jpg"
-          alt="project image 2"
-        />
-        <div class="project-card-text">
-          <h5 class="body-medium">Dashcoin</h5>
-          <p class="headline-text-regular">Web Development</p>
-          <br />
-          <a class="headline-link-regular" href="www.example.com">Learn more</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img
-          class="project-image"
-          src="project-assets/projects-section/3.jpg"
-          alt="project image 3"
-        />
-        <div class="project-card-text">
-          <h5 class="body-medium">Vectorify</h5>
-          <p class="headline-text-regular">User Experience Design</p>
-          <br />
-          <a class="headline-link-regular" href="www.example.com">Learn more</a>
-        </div>
-      </div>
+    
+    <h3 id="projects-section" class="section-title">Recent Projects</h3>
+    <section id="other-projects-section" class="projects">
+     
     </section>
 
     <section class="testimonials-background">
@@ -157,7 +109,7 @@
         </p>
         <div class="client-testimonial">
           <img
-            src="project-assets/testimonial-section/profile.png"
+            src="/project-assets/testimonial-section/profile.png"
             alt="Photo of Kristin Watson"
             class="client-photo"
           />
@@ -169,24 +121,24 @@
         <br />
         <img
           class="orbit-image"
-          src="project-assets/testimonial-section/orbit.png"
+          src="/project-assets/testimonial-section/orbit.png"
           alt="orbit"
         />
           <div class="container-emoji">
         <img
-          src="project-assets/testimonial-section/memoji-1.png"
+          src="/project-assets/testimonial-section/memoji-1.png"
           alt="emoji-1"
         />
         <img
-          src="project-assets/testimonial-section/memoji-2.png"
+          src="/project-assets/testimonial-section/memoji-2.png"
           alt="emoji-2"
         />
         <img
-          src="project-assets/testimonial-section/memoji-3.png"
+          src="/project-assets/testimonial-section/memoji-3.png"
           alt="emoji-3"
         />
         <img
-          src="project-assets/testimonial-section/memoji-4.png"
+          src="/project-assets/testimonial-section/memoji-4.png"
           alt="emoji-4"
         />
       </div>
@@ -194,12 +146,12 @@
     
     </section>
 
-    <h3 class="section-title">Our Services</h3>
+    <h3 id="services-section" class="section-title">Our Services</h3>
     <br />
     <section class="projects">
       <div class="project-card">
         <div class="service-icon"
-          ><img src="project-assets/services-section/icons/1.svg" />
+          ><img src="/project-assets/services-section/icons/1.svg" />
       </div>
         <div class="project-card-text">
           <h5 class="body-medium">User Interface Design</h5>
@@ -213,7 +165,7 @@
       </div>
       <div class="project-card">
         <div class="service-icon"
-          ><img src="project-assets/services-section/icons/2.svg" />
+          ><img src="/project-assets/services-section/icons/2.svg" />
       </div>
         <div class="project-card-text">
           <h5 class="body-medium">User Experience Design</h5>
@@ -226,7 +178,7 @@
       </div>
       <div class="project-card">
         <div class="service-icon">
-            <img src="project-assets/services-section/icons/3.svg" />
+            <img src="/project-assets/services-section/icons/3.svg" />
         </div>
         <div class="project-card-text">
           <h5 class="body-medium">Application Development</h5>
@@ -243,24 +195,12 @@
         <text class="body-regular colordarkgray">Join our newsletter for insights, tools, and behind-the-scenes content.</text>
         <div class="subscription-container">
             <input class="emailinput headline-text-regular" type="email" placeholder="Enter your email" />
-            <button class="button-1">
-                <a class="button-text" href="https://www.example.com">Subscribe</a>
-        </div>
+            <button class="button-1"><a class="button-text" href="https://www.example.com">Subscribe</a></div>
     </section>
-    <footer>
-      <div class="footer-left">
-        <img src="project-assets/logos/circle.svg" alt="Circle logo">
-        <p class="caption-1">
-          2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
-      </div>
-      <div class="footer-right">
-        <a class="caption-1" href="example.com">Team</a>
-        <a class="caption-1" href="example.com">Services</a>
-        <a class="caption-1" href="example.com">About Us</a>
-        <a class="caption-1" href="example.com">Press</a>
-        <a class="caption-1" href="example.com">Projects</a>
-        <a class="caption-1" href="example.com">Privacy Policy</a>
-      </div>
-    </footer>
-  </body>
+    <div id="footer"></div>
+    <script src="/scripts/project-cards-component.js"></script>
+    <script src="/scripts/index-script.js"></script>
+    <script src="/scripts/header-footer-script.js"></script>
+  
+</body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+
+      <div class="contact-form">
+        <div class="fullname-container">
+          <p>Full Name *</p>
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            class="input-field-form"
+            id="Full-name"
+          />
+        </div>
+        <div class="contact-form-row">
+          <div class="email-container">
+            <p>Email *</p>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="input-field-form-small"
+            />
+          </div>
+          <div class="phone-container">
+            <p>Phone Number *</p>
+            <input
+              type="text"
+              placeholder="Enter your phone number"
+              class="input-field-form-small"
+            />
+          </div>
+        </div>
+        <div class="message-container">
+          <p>Your Message *</p>
+          <textarea
+            placeholder="Write your message here..."
+            class="input-field-message"
+          ></textarea>
+        </div>
+        <button class="button-contactform">
+          <a class="button-text" href="https://www.example.com">Submit</a>
+        </button>
+      </div>
+      <p id="form-success-message" class="form-success-message">
+        Your message was sent correctly! We will get in touch soon.
+      </p>
+    </section>
+    <div id="footer"></div>
+    <script src="/scripts/header-footer-script.js"></script>
+    <script src="/scripts/email-input"></script>
+    <script src="/scripts/contact-form.js"></script>
+  </body>
+</html>
